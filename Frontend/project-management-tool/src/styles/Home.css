@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.home-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+  width: 15%;
+  background-color: #57B894;
+  color: #ffffff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.sidebar-nav button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+}
+
+.sidebar-nav button.active {
+  font-weight: bold;
+ background-color: #ffffff;
+  color: #57B894;
+}
+
+.sidebar-nav button:hover{
+  background-color: #ffffff;
+  color: #57B894;
+  font-weight: bold;
+}
+
+
+.btn-logout {
+  margin-top: auto;
+  background: #ffffff;
+  border: none;
+  padding: 0.7rem;
+  color: #57B894;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.main-content {
+  flex: 1;
+  background: #f4f7fa;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.main-header {
+  margin-bottom: 2rem;
+}
+
+.main-header h2 {
+  margin: 0;
+}
+
+
+.loading-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.custom-spinner {
+  color: #57B894; 
+}
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    padding: 1rem;
+  }
+  .main-content {
+    padding: 1rem;
+  }
+}
